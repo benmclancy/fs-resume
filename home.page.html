@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ben Clancy  
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-avatar class="avatar">
+    <img
+      src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+    />
+  </ion-avatar>
+  <ion-list>
+    <ion-item>
+      <ion-label>Date of Birth</ion-label>
+      <ion-datetime
+        disabled
+        displayFormat="MM/DD/YYYY"
+        [(ngModel)]="myDateOfBirth"
+      ></ion-datetime>
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="presentAlertMultipleButtons()">Alert</ion-button>
+</ion-content>
